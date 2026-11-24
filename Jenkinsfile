@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Code Laya') {
+        stage('Build') {
             steps {
-                echo 'GitHub se code aa gaya!'
+                echo 'Building the code...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing the code...'
+                echo 'All tests passed!'
             }
         }
     }
